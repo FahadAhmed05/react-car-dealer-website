@@ -1,54 +1,9 @@
-import React, { useState } from "react";
-import "./header.css";
-import logo from "../images/logo.jpeg";
+import React from 'react'
+import "./main.css";
 
-function App() {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
-
+const Main = () => {
   return (
     <>
-      <header className="header">
-        <img className="logo" src={logo} alt="Logo" />
-        <button
-          className={`mobile-toggle ${isMobileMenuOpen ? "active" : ""}`}
-          onClick={toggleMobileMenu}
-        >
-          <i className={`fas ${isMobileMenuOpen ? "fa-times" : "fa-bars"}`}>
-            Menu
-          </i>
-        </button>
-        <nav className={`links ${isMobileMenuOpen ? "open" : ""}`}>
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">About Us</a>
-            </li>
-            <li>
-              <a href="#">Widgets</a>
-            </li>
-            <li>
-              <a href="#">Pages</a>
-            </li>
-            <li>
-              <a href="#">Cars</a>
-            </li>
-            <li>
-              <a href="#">Blog</a>
-            </li>
-            <li>
-              <a href="#">Contact Us</a>
-            </li>
-            <button className="button">Sell your car</button>
-          </ul>
-        </nav>
-      </header>
-
       <main id="main">
         <div className="main">
           <h1>Find The Best Cars Buy And Sell Near By You</h1>
@@ -93,7 +48,7 @@ function App() {
         </div>
       </main>
     </>
-  );
+  )
 }
 
-export default App;
+export default Main

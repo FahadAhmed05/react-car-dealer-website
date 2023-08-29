@@ -33,7 +33,7 @@ const Testimonials = () => {
 
   return (
     <div className="testimonials-container">
-      <h2 className="testimonials-heading">Customer Testimonials</h2>
+       <h1 className="testimonials-heading">Customer Testimonials</h1>
       <Carousel
         showThumbs={false}
         infiniteLoop={true}

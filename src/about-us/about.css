@@ -1,0 +1,54 @@
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 80px);
+    background-color: purple;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.main-content {
+    text-align: center;
+}
+
+.main-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.main-description {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.about-us-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.section {
+    text-align: center;
+    background-color: #f4f4f4;
+    margin-bottom: 40px;
+    padding: 36px;
+    border-radius: 12px;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.address {
+    font-style: italic;
+}
